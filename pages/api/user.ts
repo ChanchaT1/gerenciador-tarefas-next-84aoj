@@ -13,7 +13,7 @@ const userEndpoint = async (req : NextApiRequest, res : NextApiResponse<DefaultR
         if(!body.name || body.name.length < 2 ){
             return res.status(400).json({ error : 'Nome inválido'});
         }
-
+    
         if(!body.email || body.email.length < 5 ){
             return res.status(400).json({ error : 'Email inválido'});
         }
